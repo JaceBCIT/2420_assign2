@@ -46,7 +46,7 @@ Create new regular user in both server
 2. Unzip your caddy with `tar xvf caddy_2.6.2_linux_amd64.tar.gz`
 3. Change ownership with `sudo chown root: caddy`
 4. Copy caddy to **/usr/bin/** directory with `sudo cp caddy /usr/bin/`  
-![unzip and move caddy](./images/upzip_caddy.PNG)  
+![unzip and move caddy](./images/unzip_caddy.PNG)  
 
 ### Step 7: Write Web App
 1. Start by Creating two new directories called *src* and *html*
@@ -56,7 +56,7 @@ Create new regular user in both server
 `npm init`
 `npm i fastify`  
 4. Create **index.js** inside *src* directory    
-![create js](./images/create_index_js.PNG)  
+![create js](./images/creating_index_js.PNG)  
 5. Send *html* and *src* directories to both servers through `sftp`  
 ![send folders](./images/send_folder_to_server.PNG)  
 
