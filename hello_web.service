@@ -1,0 +1,16 @@
+[Unit]
+Description=start node app, restart on failure
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/jace/.volta/bin/node /home/jace/src/index.js
+Restart=on-failure
+User=jace
+Group=jace
+RestartSec=10
+TimeoutStopSec=90
+SyslogIdentifier=hello_web
+
+[Install]
+WantedBy=multi-user.target
